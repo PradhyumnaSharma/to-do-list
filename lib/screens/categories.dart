@@ -12,6 +12,18 @@ class CategoriesScreen extends StatefulWidget {
 class _CategoriesScreenState extends State<CategoriesScreen> {
   @override
   Widget build(BuildContext context) {
-    return Text('welcome to categories');
+    return Scaffold(
+        appBar: AppBar(
+          title: Text("categories"),
+          leading:ElevatedButton(onPressed: () {
+            
+          },child: Icon(Icons.arrow_back),
+          color=Colors.white),
+        ),
+        body: Center(child: Text('welcome to categories')),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          child: Icon(Icons.add),
+        ));
   }
 }
