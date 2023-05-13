@@ -25,5 +25,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
           onPressed: () {},
           child: Icon(Icons.add),
         ));
+
+
   }
 }
