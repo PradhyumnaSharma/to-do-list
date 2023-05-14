@@ -15,17 +15,15 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
     return Scaffold(
         appBar: AppBar(
           title: Text("categories"),
-          leading:ElevatedButton(onPressed: () {
-            
-          },child: Icon(Icons.arrow_back),
-          color=Colors.white),
+          leading: ElevatedButton(
+              onPressed: () {},
+              child: Icon(Icons.arrow_back),
+              color = Colors.white),
         ),
         body: Center(child: Text('welcome to categories')),
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
           child: Icon(Icons.add),
         ));
-
-
   }
 }
