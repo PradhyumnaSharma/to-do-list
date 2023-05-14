@@ -24,6 +24,8 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
           child: Icon(Icons.add),
+       
+       
         ));
   }
 }
