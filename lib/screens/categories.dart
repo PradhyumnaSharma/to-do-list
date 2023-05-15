@@ -17,7 +17,30 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
         barrierDismissible: true,
         builder: (param) {
           return AlertDialog(
-            title: Text('Categories from'),
+            actions: <Widget>[
+              TextButton(
+                /*colors=Colors.blue */ onPressed: () => Navigator.pop(context),
+                child: Text('Save'),
+              ),
+              TextButton(
+                  /*colors=Colors.red*/ onPressed: () {}, child: Text('Cancel'))
+            ],
+            title: Text('Categories form'),
+            content: SingleChildScrollView(
+              child: Column(
+                children: <Widget>[
+                  TextField(
+                    decoration: InputDecoration(
+                        hintText: 'write a category', labelText: 'category'),
+                  ),
+                  TextField(
+                    decoration: InputDecoration(
+                        hintText: 'write a Description',
+                        labelText: 'Description'),
+                  )
+                ],
+              ),
+            ),
           );
         });
   }
@@ -38,7 +61,9 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
         ),
         body: Center(child: Text('welcome to categories')),
         floatingActionButton: FloatingActionButton(
-          onPressed: () {},
+          onPressed: () {
+            _showFormDialog(context);
+          },
           child: Icon(Icons.add),
         ));
   }
