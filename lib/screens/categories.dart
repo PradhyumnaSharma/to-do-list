@@ -11,6 +11,9 @@ class CategoriesScreen extends StatefulWidget {
 }
 
 class _CategoriesScreenState extends State<CategoriesScreen> {
+  var _categoryNameController = TextEditingController();
+  var _categoryDescriptionController = TextEditingController();
+
   _showFormDialog(BuildContext context) {
     return showDialog(
         context: context,
@@ -30,10 +33,12 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
               child: Column(
                 children: <Widget>[
                   TextField(
+                    controller: _categoryNameController,
                     decoration: InputDecoration(
                         hintText: 'write a category', labelText: 'category'),
                   ),
                   TextField(
+                    controller: _categoryDescriptionController,
                     decoration: InputDecoration(
                         hintText: 'write a Description',
                         labelText: 'Description'),
@@ -44,11 +49,6 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
           );
         });
   }
-
-
-
-
-  
 
   @override
   Widget build(BuildContext context) {
