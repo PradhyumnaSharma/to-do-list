@@ -42,6 +42,17 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                     decoration: InputDecoration(
                         hintText: 'write a Description',
                         labelText: 'Description'),
+
+
+
+
+
+
+
+
+
+
+                        
                   )
                 ],
               ),
