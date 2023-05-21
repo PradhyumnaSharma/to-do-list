@@ -41,13 +41,17 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                     controller: _categoryDescriptionController,
                     decoration: InputDecoration(
                         hintText: 'write a Description',
-                        labelText: 'Description'),  )
+                        labelText: 'Description'),
+                  )
                 ],
               ),
             ),
           );
         });
   }
+
+
+  
 
   @override
   Widget build(BuildContext context) {
