@@ -75,12 +75,4 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
           child: Icon(Icons.add),
         ));
   }
-
-
-
-
-
-
-
-  
 }
