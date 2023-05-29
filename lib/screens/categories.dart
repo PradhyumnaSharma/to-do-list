@@ -44,15 +44,6 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                         labelText: 'Description'),
 
 
-
-
-
-
-
-
-
-
-
                   )
                 ],
               ),
